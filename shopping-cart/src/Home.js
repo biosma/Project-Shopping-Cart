@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
 import "pure-react-carousel/dist/react-carousel.es.css";
 import useWindowDimensions from './utilities';
 
@@ -12,13 +12,18 @@ function Home(){
       naturalSlideHeight={height}
       totalSlides={3}
       visibleSlides={1}>
-        <ButtonBack className="slider-izq-button">Izq</ButtonBack>
         <Slider className="slider">
-          <Slide className="slide" index={0}><img src="BannerZapatillas.webp" alt="Banner de Zapatillas"></img></Slide>
+          <Slide className="slide" index={0}>Primer Slide</Slide>
           <Slide className="slide" index={1}>Segundo Slide</Slide>
           <Slide className="slide" index={2}>Tercer Slide</Slide>
+          
         </Slider>
-        <ButtonNext className="slider-der-button">Der</ButtonNext>
+        <div className='slider-buttons-prov'>
+          <ButtonBack className="slider-izq-button">Izq</ButtonBack>
+          <DotGroup 
+            dotNumbers={true}/>
+          <ButtonNext className="slider-der-button">Der</ButtonNext>
+        </div>
       </CarouselProvider>}
       </div>)
 }

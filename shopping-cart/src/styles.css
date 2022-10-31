@@ -6,14 +6,72 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: #000;
 }
 .page-header{
     width: 100%;
 }
 .nav-bar{
     width: 100%;
+    height: 65px;
     display: flex;
+    align-items: center;
+}
+.logo{
+    width: 175px;
+    display: flex;
+    justify-content: center;
+}
+.search-bar{
+    width: 875px;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    width: 835px;
+}
+#search-input{
+    width: 770px;
+    height: 40px;
+    border: 2px solid #0082C3
+}
+#search-button{
+    width: 65px;
+    height: 40px;
+    background-color: #0082C3;
+    border: none;
+    color: #ffffff;
 }
 .tool-zone{
+    width: 210px;
     display: flex;
+    align-items: center;
+}
+.tool{
+    width: 70px;
+}
+.cart{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEA28;
+}
+/* Comienzo de /Home */
+.slider-buttons-prov{
+    width: 205px;
+    height: 25px;
+    display: flex;
+    position: absolute;
+    right: 140px;
+}
+.slider-buttons-prov > button{
+    width: 20px;
+    margin-right: 15px;
+}
+.slider-buttons-prov > div > button{
+    width: 20px;
+    margin-right: 15px;
 }
